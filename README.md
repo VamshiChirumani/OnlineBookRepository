@@ -3,6 +3,7 @@
 This project has a WebApi created using .Net Core Web api 
 
 It uses Sql server as a Database Source With 4 tables for storing data of Users, Books, Cart, Orders
+(Structure of the tables is given in the main folder as a image DataBaseTables)
 
 Logging of the data is done using Log4Net
 
