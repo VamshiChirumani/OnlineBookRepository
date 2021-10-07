@@ -1,0 +1,29 @@
+<form  >
+  <div class="form-floating"  *ngIf="UserAvailable; else elseBlock ">
+    <mat-form-field  appearance="fill">
+
+      <div calss="form-floating">
+
+        <input  class="form-control"  name="Uname" [(ngModel)]="UserName" id="floatingInput" placeholder="UserName" >
+        
+      </div>
+    </mat-form-field>
+    <button mat-raised-button
+    class="w-10 btn btn-info"
+        color="primary" type="submit"
+        (click)="getUser()"
+        >Get User
+    </button>
+    <div style="position: relative;">
+      <button  class='btn btn-lg btn-success mb-3' mat-raised-button (click)="onAdd()"
+      color="danger">New User</button>
+    </div>
+  </div>
+  <ng-template class="form-floating" #elseBlock>
+      <div>
+        <label class="h2 " style="color: aliceblue;"><b>Hello!!!  {{UserName}}</b></label>
+      </div>
+  </ng-template>
+  
+    
+</form>

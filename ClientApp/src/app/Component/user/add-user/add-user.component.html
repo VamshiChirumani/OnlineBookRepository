@@ -1,0 +1,49 @@
+<div class="d-flex justify-content-between">
+    <h4>New user registeration </h4>
+    <button mat-button (click)="onClose()">
+        Close
+    </button>
+    
+    </div>
+    
+    <div style="overflow:auto;height: 450px;">
+        <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+            <div class="mt-4 input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">User Name</span>
+                </div>
+                <input required minlength="2" type="text"
+                class="form-control"
+                name="Name"
+                #Name="ngModel"
+                [(ngModel)]="service.formData.Name">
+            </div>
+            <div class="mt-4 input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Email</span>
+                </div>
+                <input required minlength="2" type="text"
+                class="form-control"
+                name="Email"
+                #Email="ngModel"
+                [(ngModel)]="service.formData.Email">
+            </div>
+            <div class="mt-4 input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Address</span>
+                </div>
+                <input required minlength="2" type="text"
+                class="form-control"
+                name="Address"
+                #Address="ngModel"
+                [(ngModel)]="service.formData.Address">
+            </div>
+            
+            <button mat-raised-button
+            color="primary" type="submit"
+            [disabled]="form.invalid"
+            >Register User</button>
+    
+        </form>
+    </div>
+    

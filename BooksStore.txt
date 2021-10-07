@@ -1,0 +1,646 @@
+INFO  11:06:38 Application started. Press Ctrl+C to shut down.
+INFO  11:06:38 Application started. Press Ctrl+C to shut down.
+INFO  11:06:38 Hosting environment: Development
+INFO  11:06:38 Hosting environment: Development
+INFO  11:06:38 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  11:06:38 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  11:06:44 Get books called
+INFO  11:06:48 BooksController-GetBooks-BooksReturned
+INFO  11:07:11 Get books called
+INFO  11:07:14 BooksController-GetBooks-BooksReturned
+INFO  10:24:11 Application started. Press Ctrl+C to shut down.
+INFO  10:24:11 Application started. Press Ctrl+C to shut down.
+INFO  10:24:11 Hosting environment: Development
+INFO  10:24:11 Hosting environment: Development
+INFO  10:24:11 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  10:24:11 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  10:25:46 BooksController-GetBooks Called
+INFO  10:25:46 BooksController-GetBooks-BooksReturned
+INFO  10:25:58 CartController-GetCartItems-Called
+INFO  10:25:58 CartController-GetCartItems-CartItemsReturned
+INFO  10:26:03 UserController-GetUserId-Called
+INFO  10:26:03 UserController-GetUserId-UserNameRecieved
+INFO  10:26:07 BooksController-GetBooks Called
+INFO  10:26:07 BooksController-GetBooks-BooksReturned
+INFO  10:26:08 CartController-GetCartItems-Called
+INFO  10:26:08 CartController-GetCartItems-CartItemsReturned
+INFO  10:27:00 OrdersController-GetOrdersOfUsers-Called
+INFO  10:27:00 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  10:27:02 CartController-GetCartItems-Called
+INFO  10:27:02 CartController-GetCartItems-CartItemsReturned
+INFO  10:27:07 BooksController-GetBooks Called
+INFO  10:27:07 BooksController-GetBooks-BooksReturned
+INFO  07:00:37 Application started. Press Ctrl+C to shut down.
+INFO  07:00:37 Application started. Press Ctrl+C to shut down.
+INFO  07:00:37 Hosting environment: Development
+INFO  07:00:37 Hosting environment: Development
+INFO  07:00:37 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  07:00:37 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  07:01:59 UserController-GetUserId-Called
+INFO  07:01:59 UserController-GetUserId-UserNameRecieved
+INFO  07:02:08 UserController-GetUserId-Called
+INFO  07:02:08 UserController-GetUserId-UserNameRecieved
+INFO  07:02:13 UserController-GetUserId-Called
+INFO  07:02:13 UserController-GetUserId-UserNameRecieved
+INFO  07:02:47 UserController-PostUser-Called
+INFO  07:02:47 UserController-PostUser-NewUserCreated
+ERROR 07:02:47 UserController-PostUserUserName User1 alrady exists
+ERROR 07:02:47 An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Serialization and deserialization of 'System.Type' instances are not supported and should be avoided since they can lead to security issues. Path: $.TargetSite.DeclaringType.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Type' instances are not supported and should be avoided since they can lead to security issues.
+   at System.Text.Json.Serialization.Converters.TypeConverter.Write(Utf8JsonWriter writer, Type value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore[TValue](Stream utf8Json, TValue value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 07:02:47 An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Serialization and deserialization of 'System.Type' instances are not supported and should be avoided since they can lead to security issues. Path: $.TargetSite.DeclaringType.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Type' instances are not supported and should be avoided since they can lead to security issues.
+   at System.Text.Json.Serialization.Converters.TypeConverter.Write(Utf8JsonWriter writer, Type value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore[TValue](Stream utf8Json, TValue value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  07:04:38 UserController-PostUser-Called
+INFO  07:04:39 UserController-PostUser-NewUserCreated
+ERROR 07:05:18 UserController-PostUserUserName User1 alrady exists
+INFO  07:08:36 Application started. Press Ctrl+C to shut down.
+INFO  07:08:36 Application started. Press Ctrl+C to shut down.
+INFO  07:08:36 Hosting environment: Development
+INFO  07:08:36 Hosting environment: Development
+INFO  07:08:36 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  07:08:36 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  07:08:52 UserController-GetUserId-Called
+INFO  07:08:52 UserController-GetUserId-UserNameRecieved
+INFO  07:09:10 UserController-PostUser-Called
+INFO  07:09:10 UserController-PostUser-NewUserCreated
+ERROR 07:09:14 UserController-PostUserUserName User1 alrady exists
+INFO  07:09:38 CartController-GetCartItems-Called
+INFO  07:09:38 CartController-GetCartItems-CartItemsReturned
+INFO  07:11:42 Application started. Press Ctrl+C to shut down.
+INFO  07:11:42 Application started. Press Ctrl+C to shut down.
+INFO  07:11:42 Hosting environment: Development
+INFO  07:11:42 Hosting environment: Development
+INFO  07:11:42 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  07:11:42 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  07:11:47 CartController-GetCartItems-Called
+INFO  07:11:47 CartController-GetCartItems-CartItemsReturned
+ERROR 07:11:47 CartController-GetCartItemsUser not signed in
+INFO  07:12:13 UserController-PostUser-Called
+INFO  07:12:13 UserController-PostUser-NewUserCreated
+ERROR 07:12:15 UserController-PostUserUserName User1 alrady exists
+INFO  07:12:30 UserController-GetUserId-Called
+INFO  07:12:30 UserController-GetUserId-UserNameRecieved
+INFO  07:12:33 UserController-GetUserId-Called
+INFO  07:12:33 UserController-GetUserId-UserNameRecieved
+INFO  07:12:39 CartController-GetCartItems-Called
+INFO  07:12:39 CartController-GetCartItems-CartItemsReturned
+INFO  07:12:50 BooksController-GetBooks Called
+INFO  07:12:50 BooksController-GetBooks-BooksReturned
+INFO  07:13:00 OrdersController-GetOrdersOfUsers-Called
+INFO  07:13:00 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  07:13:02 OrdersController-GetOrdersOfUsers-Called
+INFO  07:13:02 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  07:13:21 OrdersController-PostOrdersFromCart-Called
+INFO  07:13:21 OrdersController-PostOrdersFromCart-OrderRecievedFromCart
+INFO  07:13:57 CartController-GetCartItems-Called
+INFO  07:13:57 CartController-GetCartItems-CartItemsReturned
+INFO  07:14:07 OrdersController-GetOrdersOfUsers-Called
+INFO  07:14:07 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  07:15:09 Application started. Press Ctrl+C to shut down.
+INFO  07:15:09 Application started. Press Ctrl+C to shut down.
+INFO  07:15:09 Hosting environment: Development
+INFO  07:15:09 Hosting environment: Development
+INFO  07:15:09 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  07:15:09 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  07:15:17 CartController-GetCartItems-Called
+INFO  07:15:17 CartController-GetCartItems-CartItemsReturned
+ERROR 07:15:17 CartController-GetCartItemsUser not signed in
+INFO  07:15:27 UserController-GetUserId-Called
+INFO  07:15:27 UserController-GetUserId-UserNameRecieved
+INFO  07:15:35 OrdersController-GetOrdersOfUsers-Called
+INFO  07:15:35 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  07:15:42 CartController-GetCartItems-Called
+INFO  07:15:42 CartController-GetCartItems-CartItemsReturned
+INFO  07:23:15 CartController-GetCartItems-Called
+INFO  07:23:15 CartController-GetCartItems-CartItemsReturned
+INFO  07:23:30 UserController-GetUserId-Called
+INFO  07:23:30 UserController-GetUserId-UserNameRecieved
+INFO  07:23:36 BooksController-GetBooks Called
+INFO  07:23:36 BooksController-GetBooks-BooksReturned
+INFO  07:23:37 CartController-GetCartItems-Called
+INFO  07:23:37 CartController-GetCartItems-CartItemsReturned
+INFO  07:23:39 OrdersController-GetOrdersOfUsers-Called
+INFO  07:23:39 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  07:23:40 BooksController-GetBooks Called
+INFO  07:23:40 BooksController-GetBooks-BooksReturned
+INFO  07:23:43 OrdersController-PostBookOrderFromSell-Called
+INFO  07:23:43 OrdersController-PostBookOrderFromSell-BookSold
+INFO  07:23:43 CartController-PostCartItems-Called
+INFO  07:23:43 CartController-PostCartItems-ItemAddedToCart
+INFO  07:23:44 CartController-PostCartItems-Called
+INFO  07:23:44 CartController-PostCartItems-ItemAddedToCart
+INFO  07:23:44 OrdersController-PostBookOrderFromSell-Called
+INFO  07:23:44 OrdersController-PostBookOrderFromSell-BookSold
+INFO  07:23:50 CartController-GetCartItems-Called
+INFO  07:23:50 CartController-GetCartItems-CartItemsReturned
+INFO  07:24:13 BooksController-GetBooks Called
+INFO  07:24:13 BooksController-GetBooks-BooksReturned
+INFO  07:24:17 OrdersController-PostBookOrderFromBookList-Called
+INFO  07:24:17 OrdersController-PostBookOrderFromBookList-PostedBookFromList
+INFO  07:24:19 OrdersController-GetOrdersOfUsers-Called
+INFO  07:24:19 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  07:24:28 BooksController-GetBooks Called
+INFO  07:24:28 BooksController-GetBooks-BooksReturned
+INFO  07:24:30 OrdersController-PostBookOrderFromBookList-Called
+INFO  07:24:30 OrdersController-PostBookOrderFromBookList-PostedBookFromList
+INFO  07:24:31 OrdersController-GetOrdersOfUsers-Called
+INFO  07:24:31 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  07:25:13 BooksController-GetBooks Called
+INFO  07:25:13 BooksController-GetBooks-BooksReturned
+INFO  07:27:08 CartController-GetCartItems-Called
+INFO  07:27:08 CartController-GetCartItems-CartItemsReturned
+INFO  07:27:10 BooksController-GetBooks Called
+INFO  07:27:10 BooksController-GetBooks-BooksReturned
+INFO  11:53:17 Application started. Press Ctrl+C to shut down.
+INFO  11:53:17 Application started. Press Ctrl+C to shut down.
+INFO  11:53:17 Hosting environment: Development
+INFO  11:53:17 Hosting environment: Development
+INFO  11:53:17 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  11:53:17 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  11:58:00 BooksController-GetBooks Called
+INFO  11:58:00 BooksController-GetBooks-BooksReturned
+INFO  11:58:57 BooksController-GetBooks Called
+INFO  11:58:57 BooksController-GetBooks-BooksReturned
+INFO  11:59:17 CartController-GetCartItems-Called
+INFO  11:59:17 CartController-GetCartItems-CartItemsReturned
+ERROR 11:59:18 CartController-GetCartItemsUser not signed in
+INFO  11:59:22 BooksController-GetBooks Called
+INFO  11:59:22 BooksController-GetBooks-BooksReturned
+INFO  11:59:28 CartController-GetCartItems-Called
+INFO  11:59:28 CartController-GetCartItems-CartItemsReturned
+ERROR 11:59:28 CartController-GetCartItemsUser not signed in
+INFO  12:00:03 CartController-GetCartItems-Called
+INFO  12:00:03 CartController-GetCartItems-CartItemsReturned
+ERROR 12:00:03 CartController-GetCartItemsUser not signed in
+INFO  12:00:32 BooksController-GetBooks Called
+INFO  12:00:32 BooksController-GetBooks-BooksReturned
+INFO  12:00:34 CartController-GetCartItems-Called
+INFO  12:00:34 CartController-GetCartItems-CartItemsReturned
+ERROR 12:00:34 CartController-GetCartItemsUser not signed in
+INFO  12:00:36 OrdersController-GetOrdersOfUsers-Called
+INFO  12:00:36 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 12:00:36 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  12:00:37 BooksController-GetBooks Called
+INFO  12:00:37 BooksController-GetBooks-BooksReturned
+INFO  12:00:39 CartController-GetCartItems-Called
+INFO  12:00:39 CartController-GetCartItems-CartItemsReturned
+ERROR 12:00:39 CartController-GetCartItemsUser not signed in
+INFO  12:01:02 BooksController-GetBooks Called
+INFO  12:01:02 BooksController-GetBooks-BooksReturned
+INFO  12:01:09 CartController-GetCartItems-Called
+INFO  12:01:09 CartController-GetCartItems-CartItemsReturned
+ERROR 12:01:09 CartController-GetCartItemsUser not signed in
+INFO  12:01:11 BooksController-GetBooks Called
+INFO  12:01:11 BooksController-GetBooks-BooksReturned
+INFO  12:01:13 CartController-GetCartItems-Called
+INFO  12:01:13 CartController-GetCartItems-CartItemsReturned
+ERROR 12:01:13 CartController-GetCartItemsUser not signed in
+INFO  12:03:07 CartController-GetCartItems-Called
+INFO  12:03:07 CartController-GetCartItems-CartItemsReturned
+ERROR 12:03:07 CartController-GetCartItemsUser not signed in
+INFO  12:03:27 CartController-GetCartItems-Called
+INFO  12:03:27 CartController-GetCartItems-CartItemsReturned
+ERROR 12:03:27 CartController-GetCartItemsUser not signed in
+INFO  12:04:02 CartController-GetCartItems-Called
+INFO  12:04:02 CartController-GetCartItems-CartItemsReturned
+ERROR 12:04:02 CartController-GetCartItemsUser not signed in
+INFO  12:10:51 OrdersController-GetOrdersOfUsers-Called
+INFO  12:10:51 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 12:10:51 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  12:10:58 BooksController-GetBooks Called
+INFO  12:10:58 BooksController-GetBooks-BooksReturned
+INFO  12:11:01 CartController-GetCartItems-Called
+INFO  12:11:01 CartController-GetCartItems-CartItemsReturned
+ERROR 12:11:01 CartController-GetCartItemsUser not signed in
+INFO  12:18:27 CartController-GetCartItems-Called
+INFO  12:18:27 CartController-GetCartItems-CartItemsReturned
+ERROR 12:18:28 CartController-GetCartItemsUser not signed in
+INFO  12:19:23 CartController-GetCartItems-Called
+INFO  12:19:23 CartController-GetCartItems-CartItemsReturned
+ERROR 12:19:23 CartController-GetCartItemsUser not signed in
+INFO  12:19:42 CartController-GetCartItems-Called
+INFO  12:19:42 CartController-GetCartItems-CartItemsReturned
+ERROR 12:19:42 CartController-GetCartItemsUser not signed in
+INFO  12:21:58 CartController-GetCartItems-Called
+INFO  12:21:58 CartController-GetCartItems-CartItemsReturned
+ERROR 12:21:58 CartController-GetCartItemsUser not signed in
+INFO  12:26:31 CartController-GetCartItems-Called
+INFO  12:26:31 CartController-GetCartItems-CartItemsReturned
+ERROR 12:26:31 CartController-GetCartItemsUser not signed in
+INFO  12:26:50 BooksController-GetBooks Called
+INFO  12:26:50 BooksController-GetBooks-BooksReturned
+INFO  12:27:14 BooksController-GetBooks Called
+INFO  12:27:14 BooksController-GetBooks-BooksReturned
+INFO  12:27:31 CartController-GetCartItems-Called
+INFO  12:27:31 CartController-GetCartItems-CartItemsReturned
+ERROR 12:27:31 CartController-GetCartItemsUser not signed in
+INFO  12:27:33 BooksController-GetBooks Called
+INFO  12:27:33 BooksController-GetBooks-BooksReturned
+INFO  12:27:35 CartController-GetCartItems-Called
+INFO  12:27:35 CartController-GetCartItems-CartItemsReturned
+ERROR 12:27:35 CartController-GetCartItemsUser not signed in
+INFO  12:49:00 CartController-GetCartItems-Called
+INFO  12:49:00 CartController-GetCartItems-CartItemsReturned
+ERROR 12:49:00 CartController-GetCartItemsUser not signed in
+INFO  12:49:22 CartController-GetCartItems-Called
+INFO  12:49:22 CartController-GetCartItems-CartItemsReturned
+ERROR 12:49:22 CartController-GetCartItemsUser not signed in
+INFO  12:49:38 BooksController-GetBooks Called
+INFO  12:49:38 BooksController-GetBooks-BooksReturned
+INFO  12:49:46 CartController-GetCartItems-Called
+INFO  12:49:46 CartController-GetCartItems-CartItemsReturned
+ERROR 12:49:46 CartController-GetCartItemsUser not signed in
+INFO  12:49:49 OrdersController-GetOrdersOfUsers-Called
+INFO  12:49:49 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 12:49:49 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  12:49:50 CartController-GetCartItems-Called
+INFO  12:49:50 CartController-GetCartItems-CartItemsReturned
+ERROR 12:49:51 CartController-GetCartItemsUser not signed in
+INFO  12:52:30 CartController-GetCartItems-Called
+INFO  12:52:30 CartController-GetCartItems-CartItemsReturned
+ERROR 12:52:30 CartController-GetCartItemsUser not signed in
+INFO  12:52:39 CartController-GetCartItems-Called
+INFO  12:52:39 CartController-GetCartItems-CartItemsReturned
+ERROR 12:52:39 CartController-GetCartItemsUser not signed in
+INFO  12:52:48 CartController-GetCartItems-Called
+INFO  12:52:48 CartController-GetCartItems-CartItemsReturned
+ERROR 12:52:48 CartController-GetCartItemsUser not signed in
+INFO  12:53:21 CartController-GetCartItems-Called
+INFO  12:53:21 CartController-GetCartItems-CartItemsReturned
+ERROR 12:53:21 CartController-GetCartItemsUser not signed in
+INFO  01:06:23 CartController-GetCartItems-Called
+INFO  01:06:23 CartController-GetCartItems-CartItemsReturned
+ERROR 01:06:23 CartController-GetCartItemsUser not signed in
+INFO  01:07:03 CartController-GetCartItems-Called
+INFO  01:07:03 CartController-GetCartItems-CartItemsReturned
+ERROR 01:07:03 CartController-GetCartItemsUser not signed in
+INFO  01:07:10 CartController-GetCartItems-Called
+INFO  01:07:10 CartController-GetCartItems-CartItemsReturned
+ERROR 01:07:10 CartController-GetCartItemsUser not signed in
+INFO  01:09:52 CartController-GetCartItems-Called
+INFO  01:09:52 CartController-GetCartItems-CartItemsReturned
+ERROR 01:09:53 CartController-GetCartItemsUser not signed in
+INFO  01:10:02 CartController-GetCartItems-Called
+INFO  01:10:02 CartController-GetCartItems-CartItemsReturned
+ERROR 01:10:02 CartController-GetCartItemsUser not signed in
+INFO  01:10:27 BooksController-GetBooks Called
+INFO  01:10:27 BooksController-GetBooks-BooksReturned
+INFO  01:10:29 CartController-GetCartItems-Called
+INFO  01:10:29 CartController-GetCartItems-CartItemsReturned
+ERROR 01:10:29 CartController-GetCartItemsUser not signed in
+INFO  01:10:31 BooksController-GetBooks Called
+INFO  01:10:31 BooksController-GetBooks-BooksReturned
+INFO  01:10:32 CartController-GetCartItems-Called
+INFO  01:10:32 CartController-GetCartItems-CartItemsReturned
+ERROR 01:10:32 CartController-GetCartItemsUser not signed in
+INFO  01:10:33 OrdersController-GetOrdersOfUsers-Called
+INFO  01:10:33 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 01:10:33 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  01:10:50 OrdersController-GetOrdersOfUsers-Called
+INFO  01:10:50 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 01:10:50 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  01:11:05 OrdersController-GetOrdersOfUsers-Called
+INFO  01:11:05 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 01:11:05 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  01:11:23 OrdersController-GetOrdersOfUsers-Called
+INFO  01:11:23 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 01:11:23 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  01:11:34 OrdersController-GetOrdersOfUsers-Called
+INFO  01:11:34 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 01:11:34 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  01:12:37 OrdersController-GetOrdersOfUsers-Called
+INFO  01:12:37 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 01:12:37 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  01:12:46 OrdersController-GetOrdersOfUsers-Called
+INFO  01:12:46 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+ERROR 01:12:46 OrdersController-GetOrdersOfUsers-User not signed in
+INFO  01:12:51 UserController-GetUserId-Called
+INFO  01:12:51 UserController-GetUserId-UserNameRecieved
+INFO  01:12:55 BooksController-GetBooks Called
+INFO  01:12:55 BooksController-GetBooks-BooksReturned
+INFO  01:12:57 CartController-GetCartItems-Called
+INFO  01:12:57 CartController-GetCartItems-CartItemsReturned
+INFO  01:13:01 BooksController-GetBooks Called
+INFO  01:13:01 BooksController-GetBooks-BooksReturned
+INFO  01:13:03 CartController-GetCartItems-Called
+INFO  01:13:03 CartController-GetCartItems-CartItemsReturned
+INFO  01:13:09 CartController-GetCartItems-Called
+INFO  01:13:09 CartController-GetCartItems-CartItemsReturned
+INFO  01:13:13 UserController-GetUserId-Called
+INFO  01:13:13 UserController-GetUserId-UserNameRecieved
+INFO  01:13:19 BooksController-GetBooks Called
+INFO  01:13:19 BooksController-GetBooks-BooksReturned
+INFO  01:13:21 CartController-GetCartItems-Called
+INFO  01:13:21 CartController-GetCartItems-CartItemsReturned
+INFO  01:18:28 BooksController-GetBooks Called
+INFO  01:18:28 BooksController-GetBooks-BooksReturned
+INFO  01:18:32 OrdersController-GetOrdersOfUsers-Called
+INFO  01:18:32 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  01:18:34 BooksController-GetBooks Called
+INFO  01:18:34 BooksController-GetBooks-BooksReturned
+INFO  01:18:52 BooksController-UpdateBook-called
+INFO  01:18:52 BooksController-UpdateBook-BookUpdated
+INFO  01:23:09 BooksController-GetBooks Called
+INFO  01:23:09 BooksController-GetBooks-BooksReturned
+INFO  01:23:19 BooksController-GetBooks Called
+INFO  01:23:19 BooksController-GetBooks-BooksReturned
+INFO  01:23:52 BooksController-GetBooks Called
+INFO  01:23:52 BooksController-GetBooks-BooksReturned
+INFO  01:24:03 BooksController-GetBooks Called
+INFO  01:24:03 BooksController-GetBooks-BooksReturned
+INFO  01:24:27 BooksController-GetBooks Called
+INFO  01:24:27 BooksController-GetBooks-BooksReturned
+INFO  01:25:37 BooksController-GetBooks Called
+INFO  01:25:37 BooksController-GetBooks-BooksReturned
+INFO  01:25:54 BooksController-GetBooks Called
+INFO  01:25:54 BooksController-GetBooks-BooksReturned
+INFO  01:26:25 BooksController-GetBooks Called
+INFO  01:26:25 BooksController-GetBooks-BooksReturned
+INFO  02:18:33 BooksController-GetBooks Called
+INFO  02:18:33 BooksController-GetBooks-BooksReturned
+INFO  02:25:25 BooksController-GetBooks Called
+INFO  02:25:25 BooksController-GetBooks-BooksReturned
+INFO  02:25:30 BooksController-GetBooks Called
+INFO  02:25:30 BooksController-GetBooks-BooksReturned
+INFO  02:25:46 BooksController-GetBooks Called
+INFO  02:25:46 BooksController-GetBooks-BooksReturned
+INFO  02:26:48 BooksController-GetBooks Called
+INFO  02:26:48 BooksController-GetBooks-BooksReturned
+INFO  02:27:21 BooksController-GetBooks Called
+INFO  02:27:21 BooksController-GetBooks-BooksReturned
+INFO  02:27:49 BooksController-GetBooks Called
+INFO  02:27:49 BooksController-GetBooks-BooksReturned
+INFO  02:28:03 BooksController-GetBooks Called
+INFO  02:28:03 BooksController-GetBooks-BooksReturned
+INFO  02:28:22 BooksController-GetBooks Called
+INFO  02:28:22 BooksController-GetBooks-BooksReturned
+INFO  02:30:51 BooksController-GetBooks Called
+INFO  02:30:51 BooksController-GetBooks-BooksReturned
+INFO  02:31:04 BooksController-GetBooks Called
+INFO  02:31:04 BooksController-GetBooks-BooksReturned
+INFO  02:31:26 BooksController-GetBooks Called
+INFO  02:31:26 BooksController-GetBooks-BooksReturned
+INFO  02:32:02 BooksController-GetBooks Called
+INFO  02:32:02 BooksController-GetBooks-BooksReturned
+INFO  02:32:19 BooksController-GetBooks Called
+INFO  02:32:19 BooksController-GetBooks-BooksReturned
+INFO  02:32:32 BooksController-GetBooks Called
+INFO  02:32:32 BooksController-GetBooks-BooksReturned
+INFO  02:32:45 BooksController-GetBooks Called
+INFO  02:32:45 BooksController-GetBooks-BooksReturned
+INFO  02:54:45 BooksController-GetBooks Called
+INFO  02:54:45 BooksController-GetBooks-BooksReturned
+INFO  02:55:24 BooksController-GetBooks Called
+INFO  02:55:24 BooksController-GetBooks-BooksReturned
+INFO  02:55:45 BooksController-GetBooks Called
+INFO  02:55:45 BooksController-GetBooks-BooksReturned
+INFO  02:56:11 BooksController-GetBooks Called
+INFO  02:56:11 BooksController-GetBooks-BooksReturned
+INFO  02:56:17 BooksController-GetBooks Called
+INFO  02:56:17 BooksController-GetBooks-BooksReturned
+INFO  03:00:52 BooksController-GetBooks Called
+INFO  03:00:52 BooksController-GetBooks-BooksReturned
+INFO  03:01:42 BooksController-GetBooks Called
+INFO  03:01:42 BooksController-GetBooks-BooksReturned
+INFO  03:05:35 BooksController-GetBooks Called
+INFO  03:05:35 BooksController-GetBooks-BooksReturned
+INFO  03:06:02 BooksController-GetBooks Called
+INFO  03:06:02 BooksController-GetBooks-BooksReturned
+INFO  03:06:22 BooksController-GetBooks Called
+INFO  03:06:22 BooksController-GetBooks-BooksReturned
+INFO  03:06:27 BooksController-GetBooks Called
+INFO  03:06:27 BooksController-GetBooks-BooksReturned
+INFO  03:06:34 BooksController-GetBooks Called
+INFO  03:06:34 BooksController-GetBooks-BooksReturned
+INFO  03:06:39 BooksController-GetBooks Called
+INFO  03:06:39 BooksController-GetBooks-BooksReturned
+INFO  03:07:00 BooksController-GetBooks Called
+INFO  03:07:00 BooksController-GetBooks-BooksReturned
+INFO  03:08:17 BooksController-GetBooks Called
+INFO  03:08:17 BooksController-GetBooks-BooksReturned
+INFO  03:08:37 BooksController-GetBooks Called
+INFO  03:08:37 BooksController-GetBooks-BooksReturned
+INFO  03:08:53 BooksController-GetBooks Called
+INFO  03:08:53 BooksController-GetBooks-BooksReturned
+INFO  03:09:05 BooksController-GetBooks Called
+INFO  03:09:05 BooksController-GetBooks-BooksReturned
+INFO  03:09:25 BooksController-GetBooks Called
+INFO  03:09:25 BooksController-GetBooks-BooksReturned
+INFO  03:09:52 BooksController-GetBooks Called
+INFO  03:09:52 BooksController-GetBooks-BooksReturned
+INFO  03:10:07 BooksController-GetBooks Called
+INFO  03:10:07 BooksController-GetBooks-BooksReturned
+INFO  03:10:22 BooksController-GetBooks Called
+INFO  03:10:22 BooksController-GetBooks-BooksReturned
+INFO  03:11:00 BooksController-GetBooks Called
+INFO  03:11:00 BooksController-GetBooks-BooksReturned
+INFO  03:11:04 BooksController-GetBooks Called
+INFO  03:11:04 BooksController-GetBooks-BooksReturned
+INFO  03:11:28 BooksController-GetBooks Called
+INFO  03:11:28 BooksController-GetBooks-BooksReturned
+INFO  03:11:46 CartController-GetCartItems-Called
+INFO  03:11:46 CartController-GetCartItems-CartItemsReturned
+INFO  03:13:48 CartController-GetCartItems-Called
+INFO  03:13:48 CartController-GetCartItems-CartItemsReturned
+INFO  03:14:10 CartController-GetCartItems-Called
+INFO  03:14:10 CartController-GetCartItems-CartItemsReturned
+INFO  03:14:18 BooksController-GetBooks Called
+INFO  03:14:18 BooksController-GetBooks-BooksReturned
+INFO  03:14:23 CartController-GetCartItems-Called
+INFO  03:14:23 CartController-GetCartItems-CartItemsReturned
+INFO  03:14:50 CartController-GetCartItems-Called
+INFO  03:14:50 CartController-GetCartItems-CartItemsReturned
+INFO  03:15:40 CartController-GetCartItems-Called
+INFO  03:15:40 CartController-GetCartItems-CartItemsReturned
+INFO  03:16:26 CartController-GetCartItems-Called
+INFO  03:16:26 CartController-GetCartItems-CartItemsReturned
+INFO  03:17:22 UserController-GetUserId-Called
+INFO  03:17:22 UserController-GetUserId-UserNameRecieved
+INFO  03:17:28 BooksController-GetBooks Called
+INFO  03:17:28 BooksController-GetBooks-BooksReturned
+INFO  03:17:29 CartController-GetCartItems-Called
+INFO  03:17:29 CartController-GetCartItems-CartItemsReturned
+INFO  03:17:40 CartController-GetCartItems-Called
+INFO  03:17:40 CartController-GetCartItems-CartItemsReturned
+INFO  03:18:08 CartController-GetCartItems-Called
+INFO  03:18:08 CartController-GetCartItems-CartItemsReturned
+INFO  03:19:19 CartController-GetCartItems-Called
+INFO  03:19:19 CartController-GetCartItems-CartItemsReturned
+INFO  03:19:44 CartController-GetCartItems-Called
+INFO  03:19:44 CartController-GetCartItems-CartItemsReturned
+INFO  03:19:50 BooksController-GetBooks Called
+INFO  03:19:50 BooksController-GetBooks-BooksReturned
+INFO  03:19:55 UserController-GetUserId-Called
+INFO  03:19:55 UserController-GetUserId-UserNameRecieved
+INFO  03:19:57 CartController-GetCartItems-Called
+INFO  03:19:57 CartController-GetCartItems-CartItemsReturned
+INFO  03:22:49 CartController-GetCartItems-Called
+INFO  03:22:49 CartController-GetCartItems-CartItemsReturned
+INFO  03:23:11 CartController-GetCartItems-Called
+INFO  03:23:11 CartController-GetCartItems-CartItemsReturned
+INFO  03:25:59 BooksController-GetBooks Called
+INFO  03:25:59 BooksController-GetBooks-BooksReturned
+INFO  03:26:18 BooksController-PostBook-called
+INFO  03:26:18 BooksController-PostBook-BookPosted
+ERROR 03:26:50 BooksController-PostBook-Object reference not set to an instance of an object.
+INFO  03:26:50 BooksController-GetBooks Called
+INFO  03:26:50 BooksController-GetBooks-BooksReturned
+INFO  03:27:01 BooksController-GetBooks Called
+INFO  03:27:01 BooksController-GetBooks-BooksReturned
+INFO  03:27:26 BooksController-GetBooks Called
+INFO  03:27:26 BooksController-GetBooks-BooksReturned
+INFO  03:27:35 UserController-GetUserId-Called
+INFO  03:27:35 UserController-GetUserId-UserNameRecieved
+INFO  03:36:09 BooksController-GetBooks Called
+INFO  03:36:09 BooksController-GetBooks-BooksReturned
+INFO  03:36:15 UserController-GetUserId-Called
+INFO  03:36:15 UserController-GetUserId-UserNameRecieved
+INFO  03:36:32 BooksController-GetBooks Called
+INFO  03:36:32 BooksController-GetBooks-BooksReturned
+INFO  03:36:37 UserController-GetUserId-Called
+INFO  03:36:37 UserController-GetUserId-UserNameRecieved
+INFO  03:36:54 BooksController-GetBooks Called
+INFO  03:36:54 BooksController-GetBooks-BooksReturned
+INFO  03:36:57 UserController-GetUserId-Called
+INFO  03:36:57 UserController-GetUserId-UserNameRecieved
+INFO  03:37:10 BooksController-GetBooks Called
+INFO  03:37:10 BooksController-GetBooks-BooksReturned
+INFO  03:37:14 UserController-GetUserId-Called
+INFO  03:37:14 UserController-GetUserId-UserNameRecieved
+INFO  03:37:22 BooksController-GetBooks Called
+INFO  03:37:22 BooksController-GetBooks-BooksReturned
+INFO  03:37:26 UserController-GetUserId-Called
+INFO  03:37:26 UserController-GetUserId-UserNameRecieved
+INFO  03:37:50 BooksController-GetBooks Called
+INFO  03:37:50 BooksController-GetBooks-BooksReturned
+INFO  03:37:54 BooksController-GetBooks Called
+INFO  03:37:54 BooksController-GetBooks-BooksReturned
+INFO  03:37:58 UserController-GetUserId-Called
+INFO  03:37:58 UserController-GetUserId-UserNameRecieved
+INFO  03:47:10 BooksController-GetBooks Called
+INFO  03:47:10 BooksController-GetBooks-BooksReturned
+INFO  03:47:14 BooksController-GetBooks Called
+INFO  03:47:14 BooksController-GetBooks-BooksReturned
+INFO  03:47:21 UserController-GetUserId-Called
+INFO  03:47:21 UserController-GetUserId-UserNameRecieved
+INFO  03:47:24 CartController-GetCartItems-Called
+INFO  03:47:24 CartController-GetCartItems-CartItemsReturned
+INFO  03:47:33 OrdersController-GetOrdersOfUsers-Called
+INFO  03:47:33 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  03:47:37 CartController-GetCartItems-Called
+INFO  03:47:37 CartController-GetCartItems-CartItemsReturned
+INFO  03:47:50 BooksController-GetBooks Called
+INFO  03:47:50 BooksController-GetBooks-BooksReturned
+INFO  03:48:50 BooksController-GetBooks Called
+INFO  03:48:50 BooksController-GetBooks-BooksReturned
+INFO  03:49:01 BooksController-GetBooks Called
+INFO  03:49:01 BooksController-GetBooks-BooksReturned
+INFO  03:49:07 UserController-GetUserId-Called
+INFO  03:49:07 UserController-GetUserId-UserNameRecieved
+INFO  03:49:47 BooksController-GetBooks Called
+INFO  03:49:47 BooksController-GetBooks-BooksReturned
+INFO  03:49:52 CartController-GetCartItems-Called
+INFO  03:49:52 CartController-GetCartItems-CartItemsReturned
+INFO  03:49:55 BooksController-GetBooks Called
+INFO  03:49:55 BooksController-GetBooks-BooksReturned
+INFO  04:07:34 CartController-GetCartItems-Called
+INFO  04:07:34 CartController-GetCartItems-CartItemsReturned
+INFO  04:07:46 UserController-GetUserId-Called
+INFO  04:07:46 UserController-GetUserId-UserNameRecieved
+INFO  04:07:53 BooksController-GetBooks Called
+INFO  04:07:53 BooksController-GetBooks-BooksReturned
+INFO  04:07:54 CartController-GetCartItems-Called
+INFO  04:07:54 CartController-GetCartItems-CartItemsReturned
+INFO  04:09:16 CartController-GetCartItems-Called
+INFO  04:09:16 CartController-GetCartItems-CartItemsReturned
+INFO  04:09:21 CartController-GetCartItems-Called
+INFO  04:09:21 CartController-GetCartItems-CartItemsReturned
+INFO  04:10:07 CartController-GetCartItems-Called
+INFO  04:10:07 CartController-GetCartItems-CartItemsReturned
+INFO  04:10:16 CartController-GetCartItems-Called
+INFO  04:10:16 CartController-GetCartItems-CartItemsReturned
+INFO  04:11:18 BooksController-GetBooks Called
+INFO  04:11:18 BooksController-GetBooks-BooksReturned
+INFO  04:11:22 UserController-GetUserId-Called
+INFO  04:11:22 UserController-GetUserId-UserNameRecieved
+INFO  04:11:24 CartController-GetCartItems-Called
+INFO  04:11:24 CartController-GetCartItems-CartItemsReturned
+INFO  04:11:58 BooksController-GetBooks Called
+INFO  04:11:58 BooksController-GetBooks-BooksReturned
+INFO  04:17:22 BooksController-GetBooks Called
+INFO  04:17:22 BooksController-GetBooks-BooksReturned
+INFO  04:17:41 BooksController-GetBooks Called
+INFO  04:17:41 BooksController-GetBooks-BooksReturned
+INFO  04:17:57 BooksController-GetBooks Called
+INFO  04:17:57 BooksController-GetBooks-BooksReturned
+INFO  04:18:13 CartController-GetCartItems-Called
+INFO  04:18:13 CartController-GetCartItems-CartItemsReturned
+INFO  04:18:23 OrdersController-GetOrdersOfUsers-Called
+INFO  04:18:23 OrdersController-GetOrdersOfUsers-OrdersOfUserShown
+INFO  04:19:57 Application started. Press Ctrl+C to shut down.
+INFO  04:19:57 Application started. Press Ctrl+C to shut down.
+INFO  04:19:57 Hosting environment: Development
+INFO  04:19:57 Hosting environment: Development
+INFO  04:19:57 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  04:19:57 Content root path: D:\OnlineBookStore\OnlineBookStore
+INFO  04:21:37 BooksController-GetBooks Called
+INFO  04:21:37 BooksController-GetBooks-BooksReturned
+INFO  04:23:29 BooksController-GetBooks Called
+INFO  04:23:29 BooksController-GetBooks-BooksReturned

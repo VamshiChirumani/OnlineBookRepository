@@ -1,0 +1,28 @@
+<div style="overflow:auto">
+    <div class="mat-elevation-z8">
+        
+      
+      <mat-table [dataSource]="list" matSort>
+
+          <mat-header-row *matHeaderRowDef="Dcolumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns:Dcolumns;"></mat-row>
+          
+          <ng-container matColumnDef=OrderId >
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Order Id</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.OrderId}}</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef=Category >
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Category</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.Category}}</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef=Amount >
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Amount</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.Amount}}</mat-cell>
+          </ng-container>
+
+      </mat-table>
+    </div>
+  </div>
+  

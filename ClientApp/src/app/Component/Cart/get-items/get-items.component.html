@@ -1,0 +1,29 @@
+
+<div *ngIf="userUnavailable">
+  <div style="margin:3%;">
+    <button class='btn btn-secondary btn-lg'    (click)="GetItems()">Get Items</button>
+  </div>
+  <p style="color: azure;">Please Enter username</p>
+</div>
+<div *ngIf="userAvailable" style="overflow:auto">
+    <div class="mat-elevation-z8">
+      
+      <mat-table [dataSource]="list" matSort>
+          <mat-header-row *matHeaderRowDef="Dcolumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns:Dcolumns;"></mat-row>
+          
+          <ng-container matColumnDef=ItemId >
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Item Id</mat-header-cell>
+            <mat-cell *matCellDef="let element"><label>{{element.ItemId}}</label></mat-cell>
+          </ng-container>
+          <ng-container matColumnDef=bookId >
+            <mat-header-cell *matHeaderCellDef mat-sort-header>BookId</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.BookId}}</mat-cell>
+          </ng-container>
+  
+      </mat-table>
+    </div>
+
+    <button class='btn btn-secondary btn-lg' (click)="AdditemsToOrder()">Place Order</button>
+</div >
+  
