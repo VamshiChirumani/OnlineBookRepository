@@ -27,3 +27,7 @@ After signing in user is able to :
     Place order from cart where all the items in the cart are ordered
     User can also buy a book from booklist
     
+![image](https://github.com/VamshiChirumani/OnlineBookRepository/assets/92098361/18072297-1b85-4004-a35f-99799e9e84a3)
+
+![image](https://github.com/VamshiChirumani/OnlineBookRepository/assets/92098361/dca6ce3d-0d48-406e-87d0-94f61243a062)
+
